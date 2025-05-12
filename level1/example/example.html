@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Example</title>
+</head>
+<body>
+    <h1>Example for Working Of Arrays, Object</h1>
+    <script>
+        const intro = {
+                name: "naresh kumar",
+                age: "18",
+                job: "mentor",
+                education: "Mtech",
+        }
+
+        console.log(Object.keys(intro));
+        Object.keys(intro).forEach(i => console.log(i));
+        
+
+//--------------------- EXAMPLE FOR Nullish Coalescing Operator (??)-----------------------------------------------------
+
+        function greet(name) {
+      const displayName = name ?? 'Guest';
+      console.log(`Hello, ${displayName}!`);
+        }
+        
+        greet('Alice'); // Output: "Hello, Alice!"
+        greet(null); // Output: "Hello, Guest!"
+
+//-------------------------- EXAMPLE FOR Optional Chaining Operator (?.)-------------------------------------------------
+
+            const user = {
+                address: {
+                    street: '123 Main St'
+                }
+            };
+            const city = user.address?.city; // No error, city will be undefined
+            console.log(city);
+    </script>
+</body>
+</html>;
